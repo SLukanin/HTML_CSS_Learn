@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Заказ столиков :: Йокагама: суши-бар</title>
+		<link rel="stylesheet" type="text/css" href="../styles/2.1.css">
+	</head>
+	<body>
+		<header>
+			<h1>Суши-бар<em>&laquo;Йокагама&raquo;</em></h1>
+		</header>
+		<nav>
+			<div><a href="../index.html">Главная</a></div>
+			<div><a href="sashimi.html">Сашими</a></div>
+			<div><a href="sushi.html">Суши</a></div>
+			<div><a href="rolls.html">Роллы</a></div>
+		</nav>
+		<main>
+			<h2>Заказ столиков</h2>
+			<form action="mailto:order@yokogama.ru" method="post" ecntype="text/plain">
+				<p>
+					<label for="name">Как к вам обращаться?</label><br>
+					<input type="text" name="name" id="name" value="Ivan Ivanovich" required>
+					
+				</p>
+				<p>
+					<label for="phone">По какому телефону Вам перезвонить?</label><br>
+					<input type="text" id="phone" name="phone" required value="89011234567">
+				</p>
+				<p>
+					<label for="time">На какое время желате заказать столик?</label><br>
+					<input type="time" id="time" name="time" required value="18:00">
+				</p>
+
+				<fieldset>
+					<legend>Укажите сведения о Вас и о Вашей компании</legend>
+					<label for="cnt">На сколько человек заказать столик?</label><br>
+					<input type="radio" name="cnt" id="cnt" value="1" checked> 1 &nbsp;&nbsp;&nbsp;
+					<input type="radio" name="cnt" value="2"> 2 &nbsp;&nbsp;&nbsp;
+					<input type="radio" name="cnt" value="more"> 3 и более
+					<p><input type="checkbox" name="children" value="*">Среди клиентов будут дети</p>
+				</fieldset>
+
+				
+				<p>
+					<input type="image" src="../images/order_button.jpg">
+				</p>
+			</form>
+		</main>
+		<footer>
+			<p>&copy;Читатели книги&laquo;HTML и CSS&raquo;<br>Все права защищены.</p>
+		</footer>
+	
+	</body>
+	</html>
