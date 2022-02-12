@@ -1,0 +1,41 @@
+.test{
+  /*background-image: radial-gradient(farthest-side at 100% 100%, white, black 40%, lightgrey);*/
+  /* background-image: repeating-linear-gradient(to right, white, black 20%, lightgrey 50%); */
+}
+.box {
+  width: 500px;
+  height: 300px;
+  margin: 10px 100px;
+  border: 20px dotted rgb(113, 134, 240);
+  padding: 20px;
+  font-family: sans-serif;
+}
+.backg {
+  background-color: rgb(197, 229, 247);
+  background-clip: padding-box;
+}
+.backggrad {
+  background-image: linear-gradient(to top right, rgb(113, 134, 240), rgb(197, 229, 247) 67%, rgb(113, 134, 240) 100%);
+  background-clip: padding-box;
+  /* background-image: linear-gradient(20 deg, white 0%, grey 30%, lightgrey 100%); */
+}
+.backradgrad {
+  background-clip: padding-box;
+  background-image: radial-gradient(ellipse closest-corner, #ffffff, rgb(169, 244, 50) 40%, #d3d3d3);
+}
+.testbg {
+  background-image: url(https://w-dog.ru/wallpapers/16/11/523043386098344/accel-world-kuro-yuki-qiuzhi-huiyi-devushka-sidya-forma-shkolnica-zdanie.jpg);
+  background-size: contain;
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.coll {
+  text-align: justify;
+  column-count: 4;
+  column-gap: 30px;
+
+  column-rule-width: 10px;
+  column-rule-style: solid;
+  column-rule-color: lightgrey;
+}

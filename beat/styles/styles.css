@@ -1,32 +1,67 @@
-body {margin: 0px;}
-.gallery-item img {width:  100%;}
-body.noscroll {overflow: hidden;}
-td.count {counter-reset: ch1;}
-a[target=gallery] {font-size: 16pt;}
+body {
+  counter-reset: ph_links;
+  margin: 0px;
+  /* padding: 0pt; */
+  background-image: url(../images/bg1.jpg), url(../images/bg2.jpg), url(../images/bg3.jpg), url(../images/main_bg.jpg);
+  background-size: 60pt, 60pt, 60pt, cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 10pt 8pt, 10pt 76pt, 10pt 144pt, center;
+}
+
+.gallery-item img {
+  width: 100%;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+td.count {
+  counter-reset: ch1;
+}
+
+a[target=gallery] {
+  font-size: 16pt;
+}
+
 a[target=gallery]::before {
-    counter-increment: ph_links;
-    content: counter(ph_links) ". ";
+  counter-increment: ph_links;
+  content: counter(ph_links) ". ";
 }
+
 header h1 {
-	font: bold 42pt Verdana, sans-serif;
-	text-align: right;
-	color: white;
-	background-image: radial-gradient(closest-side at 25pt 50%, black, white, black, white, black);
-	/*background-color: black;*/
-	margin-top: 8pt;
-	margin-right: 8pt;
-	margin-left: 80pt;
-	padding-right: 12pt;
-	/*width: 67%;*/
+  font: bold 42pt Verdana, sans-serif;
+  text-align: right;
+  color: white;
+  background-image: radial-gradient(closest-side at 25pt 50%, black, white, black, white, black);
+  /*background-color: black;*/
+  margin-top: 8pt;
+  margin-right: 8pt;
+  margin-left: 80pt;
+  padding-right: 12pt;
+  /*width: 67%;*/
 }
+
 main {
-	margin-left: 80pt;
-	padding-left: 20pt;
-	padding-right: 10pt;
-	border-left-width: 20pt;
-	border-left-style: solid;
-	border-left-color: grey;
+  margin-left: 80pt;
+  padding-left: 20pt;
+  padding-right: 10pt;
+  border-left-width: 20pt;
+  border-left-style: solid;
+  border-left-color: grey;
 }
+
 main p {
-	font: 12pt Arial, sans-serif;
+  font: 12pt Arial, sans-serif;
+}
+div.tb1 {display: table;}
+div.tb1 > div {display: table-row;}
+div.tb1 > div > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+div.tb1 > div > div > a {
+  display: block;
+  margin: 10px 10px 10px 0px;
 }
