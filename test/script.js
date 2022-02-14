@@ -1,3 +1,27 @@
-let a = 10;
+let a = 2;
 let b = 5;
-console.log("a = ", a, ", b = ", b, ", сумма = ", a + b );
+console.log(`Он сказал ${a} раз \"привет\"`);
+console.log("Он сказал " + b + " раз \"привет\"");
+
+let car = {
+  color: 'red',
+};
+
+
+function watch(message = "adsdf") {
+  return message + ".qwerty";
+}
+
+let anonym = function () {
+  console.log("you are anonymous");
+}
+
+anonym();
+
+(function () {
+  console.log("you are anonymous 2");
+})();
+
+setTimeout(function () {
+  console.log('Test');
+}, 3000);

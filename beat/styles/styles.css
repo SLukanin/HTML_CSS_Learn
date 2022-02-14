@@ -65,3 +65,37 @@ div.tb1 > div > div > a {
   display: block;
   margin: 10px 10px 10px 0px;
 }
+
+aside {
+  float: right;
+  margin: 20px 0px 20px 20px;
+  padding: 5px;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px 10px 80pt;
+  padding: 5px;
+  border: 4px solid grey;
+  font: 16pt Arial, sans-serif;
+}
+nav a {display: block;}
+
+nav a:link, nav a:visited {
+  color: blue;
+  background-color: white;
+  text-decoration: none;
+}
+nav a:hover, nav a:active {
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+}
+nav div {
+  color: white;
+  background-color: grey;
+}
