@@ -5,8 +5,11 @@ console.log("Он сказал " + b + " раз \"привет\"");
 
 let car = {
   color: 'red',
-};
-
+  open(message) {
+    console.log('Открыто - 2');
+  }
+}
+car.open();
 
 function watch(message = "adsdf") {
   return message + ".qwerty";

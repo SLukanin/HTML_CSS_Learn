@@ -99,3 +99,17 @@ nav div {
   color: white;
   background-color: grey;
 }
+
+div#discography {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div#discography > div {
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  width: 120px;
+}

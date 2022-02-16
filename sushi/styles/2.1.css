@@ -20,27 +20,59 @@ body {
 	font-family: Arial;
 	/* background-image: linear-gradient(to right top, salmon 0%, white 67%, salmon 100%); */
 	background-image: repeating-linear-gradient(to right, white 0px, bisque 5px, white 10px);
+	margin: 0px;
 }
-h1 {
-	font-size: 32pt;
-	font-family: Verdana;
-	text-shadow: 3pt 3pt 5pt darkgrey;
+
+header {
+	background-color: white;
+	height: 80pt;
+	margin-bottom: 20pt;
 }
+.pos1, .pos2, .pos3, .pos4, .pos5 {
+	position: absolute;
+}
+.pos1 {
+	left: 0pt;
+	top: 0pt;
+	width: 140pt;
+}
+.pos1 img { height: 80pt; }
+.pos2 {
+	left: 140pt;
+	top: 29pt;
+	right: 0pt;
+}
+.pos2 h1 {
+	font: bold italic 42pt Verdana;
+	text-transform: uppercase;
+	text-align: right;
+	margin: 0px;
+	letter-spacing: 10pt;
+	background-color: darksalmon;
+}
+.pos3 {
+	left: 140pt;
+	top: 4pt;
+	right: 70pt;
+}
+.pos3 h1 {
+	margin: 0px;
+	font: bold 24pt Verdana;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 6pt;
+	color: darksalmon;
+}
+
 p {
 	font-size: 14pt;
 }
-.picture {text-align: center;}
-.picture img {
-	width: 67%;
-	min-width: 500px;
-	max-width: 700px;
-	}
-p.greeting {font-size: 24pt;}
+
+p.greeting {font-size: 16pt;}
 P::selection {
 	color: black;
 	background-color: lightgrey;
 }
-h1 em {font-weight: normal;}
 address {text-align: right;}
 .advertising {
 	margin-left: 30pt;
@@ -51,8 +83,30 @@ address {text-align: right;}
 	margin-top: 5pt;
 	margin-bottom: 5pt;
 }
-header {text-align: center;}
-footer {text-align: right;}
+footer {
+	text-align: right;
+	background-color: white;
+	height: 120pt;
+	position: relative;
+	margin: 0px;
+}
+.pos4 {
+	top: 0pt;
+	right: 20pt;
+}
+.pos5 {
+	margin: 0px;
+	top: 20pt;
+	left: 30pt;
+	width: 100pt;
+	text-align: center;
+	background-color: yellow;
+}
+.pos5 a {
+	font: bold 14pt Verdana;
+	text-align: center;
+
+}
 main {text-align: justify;}
 .bigger {font-size: 16pt;}
 /*table.pricelist {border-collapse: collapse;}*/
@@ -108,7 +162,7 @@ table.catalog h3::after {content: ":"}
 nav {
 	float: left;
 	width: 150px;
-	margin: 10px 30px 10px 0px;
+	margin: 10px 40px 10px 0px;
 	padding: 10px;
 	/*border: black medium double;
 	border-radius: 10px;*/
@@ -135,12 +189,12 @@ nav a:active, nav a:hover {
 	color: darksalmon;
 	text-decoration: none;
 }
-footer {
+/* footer {
 	border-top: 2px dotted lightgrey;
 	width: 50%;
 	min-width: 300px;
 	margin-left: 50%;
-}
+} */
 ol {list-style-type: upper-roman;}
 form {
 	width: 400px;
