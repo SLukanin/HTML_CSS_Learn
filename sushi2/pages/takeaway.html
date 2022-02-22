@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Заказ еды на вынос :: Йокагама: суши-бар</title>
+		<link rel="stylesheet" type="text/css" href="../styles/2.1.css">
+	</head>
+	<body>
+		<header>
+			<div class="pos1"><img src="images/sushi.jpg"></div>
+			<div class="pos2">
+				<h1>Йокогама</h1>
+			</div>
+			<div class="pos3">
+				<h1>Суши-бар</h1>
+			</div>
+		</header>
+		<div id="tablecont">
+			<div>
+				<nav>
+					<a href="../index.html">Главная</a>
+					<a href="sashimi.html">Сашими</a>
+					<a href="sushi.html">Суши</a>
+					<a href="rolls.html">Роллы</a>
+					<a href="order.html">Заказ столика</a>
+					<div>Заказ на вынос</div>
+					<a href="pricelist.html">Прайс-лист</a>
+				</nav>
+				<main>
+					<h2>Заказ еды на вынос</h2>
+					<form action="mailto:order@yokogama.ru" method="post" ecntype="text/plain">
+						<p>
+							<label for="dishes">Что желаете заказать</label><br>
+							<select name="dishes" id="dishes" size="6" multiple>
+								<optgroup label="Сашими">
+									<option value="unagi">Унаги</option>
+									<option value="hamachi">Хамачи</option>
+								</optgroup>
+								<optgroup label="Суши">
+									<option value="chukka">Чукка</option>
+									<option value="maguro">Магуро</option>
+									<option value="tobiko">Тобико</option>
+								</optgroup>
+								<optgroup label="Роллы">
+									<option value="kunsei_batakon">Кунсэй батакон</option>
+									<option value="arigato">Аригато</option>
+									<option value="mexican">Мексиканский</option>
+								</optgroup>
+							</select>
+						</p>
+						<p>
+							<label for="phone">По какому телефону Вам перезвонить?</label><br>
+							<input type="text" id="phone" name="phone" required value="asdasd">
+						</p>
+						<p>
+							<input type="submit">
+						</p>
+					</form>
+				</main>
+			</div>
+		</div>
+		<footer>
+			<div class="pos4">
+				<p class="greeting">Ждем вас!</p>
+				<address>Красная площадь, д.1</address>
+				<p>&copy; читатели книги &laquo;HTML и CSS&raquo;<br>
+				Все права защищены</p>
+			</div>
+			<div class="pos5">
+				<p><a href="mailto:reception@yokagama.ru">Закажите столик</a></p></div>
+		</footer>
+	</body>
+	</html>

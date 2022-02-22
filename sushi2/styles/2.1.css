@@ -26,7 +26,7 @@ body {
 header {
 	background-color: white;
 	height: 80pt;
-	margin-bottom: 20pt;
+	/* margin-bottom: 20pt; */
 }
 .pos1, .pos2, .pos3, .pos4, .pos5 {
 	position: absolute;
@@ -107,9 +107,10 @@ footer {
 	text-align: center;
 
 }
-main {text-align: justify;
-	margin-left: 210px;
+main {
+	text-align: justify;
 	padding-right: 10px;
+	/* margin-left: 210px; убрано для табличного макета */
 }
 .bigger {font-size: 16pt;}
 
@@ -164,14 +165,14 @@ table.catalog tr:last-child td {
 table.catalog img {width: 100%}
 table.catalog h3::after {content: ":"}
 nav {
-	float: left;
+	/* float: left; убрано для табличного макета */
 	width: 150px;
-	margin: 10px 40px 10px 0px;
+	/* margin: 10px 40px 10px 0px; убрано для табличного макета */
 	padding: 10px;
 	/*border: black medium double;
 	border-radius: 10px;*/
-
 	/* box-shadow: 0px 0px 5px 5px darkgrey inset, 0px 0px 5px 5px darkgrey; туманная тень*/
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 nav div, nav a {
@@ -232,4 +233,17 @@ input:valid{
 input:invalid, select:invalid {
 	border-color: red;
 	background-color: red;
+}
+
+div#tablecont {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+}
+div#tablecont > div {
+	display: table-row;
+}
+div#tablecont > div > * {
+	display: table-cell;
+	vertical-align: top;
 }
