@@ -42,6 +42,7 @@ header h1 {
   margin-left: 80pt;
   padding-right: 12pt;
   /*width: 67%;*/
+  transform: skewX(5deg);
 }
 
 main {
@@ -95,6 +96,7 @@ nav a:hover, nav a:active {
   color: white;
   background-color: blue;
   text-decoration: none;
+  transform: scale(1.2, 1.2) translateY(4px);
 }
 nav div {
   color: white;
@@ -113,6 +115,10 @@ div#discography > div {
   margin: 5px;
   text-align: center;
   width: 120px;
+  transform: rotate(5deg);
+}
+div#discography > div:hover {
+  transform: rotate(-5deg);
 }
 
 footer {
