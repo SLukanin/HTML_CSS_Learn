@@ -110,6 +110,7 @@ footer {
 main {
 	text-align: justify;
 	padding-right: 10px;
+	padding-left: 10px;
 	/* margin-left: 210px; убрано для табличного макета */
 }
 .bigger {font-size: 16pt;}

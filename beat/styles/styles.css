@@ -24,6 +24,7 @@ td.count {
 a[target=gallery] {
   font-size: 16pt;
 }
+sdf
 
 a[target=gallery]::before {
   counter-increment: ph_links;
@@ -112,4 +113,15 @@ div#discography > div {
   margin: 5px;
   text-align: center;
   width: 120px;
+}
+
+footer {
+  /* position: relative; */
+  margin-left: 120pt;
+  margin-right: 10pt;
+  padding-right: 3pt;
+  background-color: grey;
+  text-align: right;
+  color: white;
+
 }
