@@ -1,3 +1,14 @@
+@keyframes discography {
+  0% {
+    transform: rotate(5deg);
+    transform: translateY(5px);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+  
+}
+
 body {
   counter-reset: ph_links;
   margin: 0px;
@@ -91,12 +102,19 @@ nav a:link, nav a:visited {
   color: blue;
   background-color: white;
   text-decoration: none;
+  transition-duration: 1s;
+
 }
 nav a:hover, nav a:active {
   color: white;
   background-color: blue;
   text-decoration: none;
   transform: scale(1.2, 1.2) translateY(4px);
+  /* transition-duration: 0.5s; */
+  transition-property: transform, color, background-color;
+  transition-duration: 0.5s, 0.2s, 0.2s;
+  transition-timing-function: linear, ease, ease;
+  transition-delay: 0s, 0.3s, 0.3s;
 }
 nav div {
   color: white;
@@ -107,6 +125,7 @@ div#discography {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
 }
 
 div#discography > div {
@@ -119,6 +138,9 @@ div#discography > div {
 }
 div#discography > div:hover {
   transform: rotate(-5deg);
+  animation-name: discography;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
 }
 
 footer {

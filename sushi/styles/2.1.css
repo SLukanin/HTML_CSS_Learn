@@ -15,6 +15,14 @@
 	font-family: "Caviar Dreams";
 	scr: url(../fonts/CaviarDreams_BoldItalic);
 }
+@keyframes navlinks {
+	/* 0% {color: darkred;} начальное состояние задано в описании стиля nav:links, здесь оно не обязательно */
+	60% {color: black;}
+	100% {
+		color: darksalmon;
+		transform: translateX(10px);
+	}
+}
 
 body {
 	font-family: Arial;
@@ -185,12 +193,15 @@ nav a {
 	display: block;
 }
 nav a:link, nav a:visited {
-	color: darkred;
+	color: darkred;  
 	text-decoration: none;
 }
 nav a:active, nav a:hover {
-	color: darksalmon;
+	/* color: darksalmon;  теперь цвет задается в анимации navlinks*/ 
 	text-decoration: none;
+	animation-name: navlinks;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
 }
 /* footer {
 	border-top: 2px dotted lightgrey;
