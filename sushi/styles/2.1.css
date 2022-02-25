@@ -24,6 +24,31 @@
 	}
 }
 
+@keyframes zakazStolika {
+	0% {
+		left: -130pt;
+		transform: scale(0.2, 0.2);
+		background-color: white;
+		
+		/* transform: translateX(-130pt); */
+	}
+	33% {
+		left: 30pt;
+		transform: scale(0.2, 0.2);	
+		background-color: white;
+	}
+	67% {
+		left: 30pt;
+		transform: scale(1, 1);
+		background-color: white;
+	}
+	100% {
+		left: 30pt;
+		background-color: yellow;
+		transform: scale(1, 1);	
+	}
+}
+
 body {
 	font-family: Arial;
 	/* background-image: linear-gradient(to right top, salmon 0%, white 67%, salmon 100%); */
@@ -109,6 +134,12 @@ footer {
 	width: 100pt;
 	text-align: center;
 	background-color: yellow;
+	/* transform: scale(0.2, 0.2); */
+	animation-name: zakazStolika;
+	animation-delay: 2s;
+	animation-duration: 1.5s;
+	animation-play-state: running;
+	animation-fill-mode: both;
 }
 .pos5 a {
 	font: bold 14pt Verdana;
