@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TimerJs</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+
+        let timer = stopWatch();
+
+        for (let i = 0; i < 1000000000; i++) {
+            let foo = Math.random() * 10000;
+        }
+        timer();
+
+        function stopWatch() {
+            let startTime = Date.now();
+
+            function getDelay() {
+                let elapsedTime = Date.now() - startTime;
+                alert(elapsedTime);
+            }
+
+            return getDelay;
+        }
+    </script>
+</body>
+</html>
