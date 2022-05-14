@@ -43,6 +43,14 @@
 
       let counter = 0;
 
+      let elements = document.querySelectorAll("div");
+
+      for (let i = 0; i < elements.length; i++) {
+        console.log(elements[i]);
+      }
+      
+    
+
       function doSomething2(e) {
         counter++;
         console.log("Button clicked " + counter + " times!");
